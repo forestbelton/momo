@@ -1,0 +1,26 @@
+{
+  "name": "momo",
+  "version": "0.1.0",
+  "description": "translation library with MO file support",
+  "main": "lib/momo.js",
+  "scripts": {
+    "test": "nodeunit tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/forestbelton/momo.git"
+  },
+  "keywords": [
+    "gettext",
+    "i18n"
+  ],
+  "author": "Forest Belton <forest@homolo.gy>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/forestbelton/momo/issues"
+  },
+  "homepage": "https://github.com/forestbelton/momo",
+  "devDependencies": {
+    "nodeunit": "~0.8.6"
+  }
+}

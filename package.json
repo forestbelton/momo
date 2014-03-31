@@ -4,7 +4,7 @@
   "description": "translation library with MO file support",
   "main": "lib/momo.js",
   "scripts": {
-    "test": "nodeunit tests"
+    "test": "find tests/data -name '*.po' -exec sh -c 'msgfmt {} -o \"tests/data/$(basename {} .po).mo\"' \\; && nodeunit tests"
   },
   "repository": {
     "type": "git",

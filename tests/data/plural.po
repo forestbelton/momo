@@ -1,0 +1,5 @@
+msgid "singular id"
+msgid_plural "plural id"
+msgstr[0] "case 0"
+msgstr[1] "case 1"
+msgstr[2] "case 2"

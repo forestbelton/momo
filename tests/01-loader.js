@@ -21,3 +21,19 @@ exports['single'] = function(test) {
 
   test.done();
 };
+
+exports['plural'] = function(test) {
+  test.expect(1);
+
+  var dv = getDV('tests/data/plural.mo');
+  var res = M.load(dv);
+  test.deepEqual([{
+    id:        'singular id',
+    id_plural: 'plural id',
+    context:   '',
+    strings:   ['case 0', 'case 1', 'case 2']
+  }], res);
+
+  test.done();
+};
+

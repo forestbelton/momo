@@ -1,0 +1,3 @@
+msgctxt "test context"
+msgid "context id"
+msgstr "context translation"

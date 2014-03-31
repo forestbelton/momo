@@ -37,3 +37,18 @@ exports['plural'] = function(test) {
   test.done();
 };
 
+exports['context'] = function(test) {
+  test.expect(1);
+
+  var dv = getDV('tests/data/context.mo');
+  var res = M.load(dv);
+  test.deepEqual([{
+    id:        'context id',
+    id_plural: '',
+    context:   'test context',
+    strings:   ['context translation']
+  }], res);
+
+  test.done();
+};
+
